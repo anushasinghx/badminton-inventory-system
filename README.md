@@ -1,169 +1,100 @@
-#InventoryPro - Badminton Inventory System
-I
+# 🏸 InventoryPro – Badminton Inventory Management System
+**By Anusha Singh**
 
-By Anusha Singh
+InventoryPro is a full-stack inventory management system that helps merchants manage products, track stock levels, view inventory analytics, and export data.
 
-InventoryPro is a simple, full-stack inventory management system that helps merchants manage products, track stock levels, view inventory analytics, and export data.
+---
 
-🚀 Live Application
+## 🚀 Live Application
 
-Frontend (Dashboard UI)
+**Frontend (Dashboard UI)**  
 https://badminton-inventory-system-fe.netlify.app
 
-Backend (API Health Check)
+**Backend (API Health Check)**  
 https://badminton-inventory-system-be-n9g1.onrender.com/api/health
 
-Note: The backend is an API-only service. The root URL (/) intentionally returns 404. All functionality is exposed under /api/*.
+> Note: The backend is an API-only service. The root URL (`/`) intentionally returns 404. All functionality is exposed under `/api/*`.
 
-🧩 Core Features
-📊 Dashboard – Inventory Overview
+---
 
-Provides a real-time overview of inventory performance, including:
+## 🧩 Core Features
 
-Total Products & Total Inventory Value
+### 📊 Dashboard
+- Inventory overview with total products and total inventory value  
+- Low stock and out-of-stock alerts  
+- Product category distribution  
+- Recent inventory activity log  
+- Manual data refresh option  
 
-Low Stock and Out of Stock items
+### 📦 Products (CRUD)
+- Add, update, and delete products  
+- View products with stock status and inventory value  
+- Search by product name or SKU  
+- Filter and sort by stock, price, and last updated  
 
-Product category distribution
+### 📜 Stock History
+- Tracks all inventory movements  
+- Displays stock increases and decreases with timestamps  
 
-Stock alerts and recent activity log
+### 📤 Export
+- Export inventory data in CSV format  
+- Optional date range filtering  
+- Include low-stock and out-of-stock products  
 
-Manual data refresh option
+---
 
-📦 Products – Product Management (CRUD)
+## 🛠 Tech Stack
 
-Manage the complete product catalog:
+**Frontend**
+- React (Vite)
+- TypeScript
+- Axios
 
-Add products with name, SKU, category, price, stock, and minimum threshold
+**Backend**
+- Node.js
+- Express
+- TypeScript
+- In-memory data storage
 
-View products with stock status, inventory value, and last updated time
+**Deployment**
+- Frontend: Netlify
+- Backend: Render
 
-Search by product name or SKU
+---
 
-Filter by stock status and category
+## ⚙️ Setup Instructions
 
-Sort by name, price, stock level, or last updated
+### Prerequisites
+- Node.js v18+
+- npm
+- Git
 
-Update product details and adjust stock levels
+---
 
-Delete products with confirmation
-
-📜 Stock History
-
-Track all inventory movements over time:
-
-Product name
-
-Change amount (+ / −)
-
-Previous and current stock
-
-Reason for change
-
-Timestamp
-
-📤 Export
-
-Export inventory data for analysis or backup:
-
-CSV export format
-
-Optional date range filtering
-
-Include low-stock and out-of-stock products
-
-One-click file download
-
-🛠 Tech Stack
-
-Frontend
-
-React (Vite)
-
-TypeScript
-
-Axios
-
-Responsive CSS
-
-Backend
-
-Node.js
-
-Express
-
-TypeScript
-
-In-memory data storage
-
-Deployment
-
-Frontend: Netlify
-
-Backend: Render
-
-⚙️ Setup Instructions
-Prerequisites
-
-Node.js v18+
-
-npm
-
-Git
-
-1️⃣ Clone the repository
+```bash
+1️⃣ Clone the Repository
 git clone https://github.com/anushasinghx/badminton-inventory-system.git
 cd inventory-system
 
-2️⃣ Backend setup
+2️⃣ Backend Setup
 cd server
 npm install
-
-
-Create .env (optional for local development):
-
-PORT=5000
-NODE_ENV=development
-CORS_ORIGIN=http://localhost:5173
-
-
-Run backend:
-
 npm run dev
-
-
 Backend runs at:
-
 http://localhost:5000/api/health
 
-3️⃣ Frontend setup
+3️⃣ Frontend Setup
 cd ../client
 npm install
-
-
-Create .env:
-
-VITE_API_URL=http://localhost:5000
-VITE_APP_NAME=InventoryPro
-
-
-Run frontend:
-
 npm run dev
-
-
 Frontend runs at:
-
 http://localhost:5173
+```
 
-🌐 Environment Variables (Production)
-
-Frontend (Netlify)
-
+### Environment Variables (Production):
 VITE_API_URL=https://badminton-inventory-system-be-n9g1.onrender.com
+Backend (Render): NODE_ENV=production
+                  CORS_ORIGIN=https://badminton-inventory-system-fe.netlify.app
 
-
-Backend (Render)
-
-NODE_ENV=production
-CORS_ORIGIN=https://badminton-inventory-system-fe.netlify.app
+### 👤Author
+### Anusha Singh
